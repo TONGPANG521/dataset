@@ -1,1 +1,1 @@
-During both the training and testing phases
+During both the training and testing phases, the official GoogleNet model was employed and directly loaded through torchvision. The model module implemented in this work is based on the official GoogleNet architecture, enabling independent exploration of the model's structural configuration.
