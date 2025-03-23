@@ -61,7 +61,7 @@ def main():
 
     def scheduler(epoch):
         end_lr_rate = 0.01  # end_lr = initial_lr * end_lr_rate
-        rate = ((1 + math.cos(epoch * math.pi / epochs)) / 2) * (1 - end_lr_rate) + end_lr_rate  # 余弦退火
+        rate = ((1 + math.cos(epoch * math.pi / epochs)) / 2) * (1 - end_lr_rate) + end_lr_rate  
         new_lr = rate * initial_lr
 
         train_writer.add_scalar('learning rate', new_lr, epoch)
