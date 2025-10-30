@@ -1,4 +1,3 @@
-%%writefile model.py
 import torch.nn as nn
 import torch
 
@@ -157,6 +156,7 @@ class ResNet(nn.Module):
         return x
 
 def resnet101(num_classes=1000, include_top=True):
+    # https://download.pytorch.org/models/resnet101-5d3b4d8f.pth
     return ResNet(Bottleneck, [3, 4, 23, 3], num_classes=num_classes, include_top=include_top)
 
 def resnext101_32x8d(num_classes=1000, include_top=True):
